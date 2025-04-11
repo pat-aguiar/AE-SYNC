@@ -1,23 +1,8 @@
-import { Link } from "react-router-dom";
-import WhatItem from "./WhatItem";
-
-const WhatSection = () => {
+const FeatureSection = () => {
   return (
-    <div className="flex justify-center p-8 bg-brand-gray/5">
+    <div className="flex flex-col justify-center p-8">
       <div className="flex flex-col items-center w-full max-w-5xl px-10">
-        <div className="font-oswald text-center text-black text-2xl md:text-4xl  md:leading-[1.5] mb-4 font-semibold">
-          What will you Build?
-        </div>
-        <div className="text-black text-center text-sm md:text-lg font-manrope mb-16">
-          Productivity increasing automation tools, on the web. <br />
-          Join driven AEC professionals with a mindset on growth and
-          productivity.
-        </div>
-        <div className="bg-green-800 border-8 border-brand-gray/50 h-[450px] w-[700px] rounded-2xl"></div>
-
-        {/* md:leading-[1.5] */}
-
-        {/* <div className="flex flex-wrap justify-between mb-12">
+        <div className="flex flex-wrap justify-between mb-12">
           <WhatItem
             icon="fa-solid fa-lightbulb"
             title="Beginner To Leader"
@@ -47,7 +32,7 @@ const WhatSection = () => {
             icon="fa-solid fa-gift"
             title="Try For Free"
             description="
-            Time to escalate your work's impact and become an all around asset. Take your first step today, start for free."
+              Time to escalate your work's impact and become an all around asset. Take your first step today, start for free."
           />
         </div>
         <Link
@@ -56,10 +41,10 @@ const WhatSection = () => {
         >
           Get Started For Free
           <i className="fa-solid fa-arrow-right ml-4 text-xl"></i>
-        </Link> */}
+        </Link>
       </div>
     </div>
   );
 };
 
-export default WhatSection;
+export default FeatureSection;

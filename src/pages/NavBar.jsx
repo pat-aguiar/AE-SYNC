@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="sticky top-0 flex justify-center p-8 bg-white text-brand-gray text-sm md:text-md font-manrope">
+    <div className="top-0 flex justify-center p-8 bg-black/80 text-brand-gray text-sm md:text-md font-manrope">
       <div className="flex justify-between items-center w-full max-w-6xl px-10">
         <Link to="/">
           <img className="w-36" src="./../../public/logo-main-orange.png" />

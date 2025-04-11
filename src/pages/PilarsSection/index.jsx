@@ -1,9 +1,9 @@
 import PilarsItem from "./PilarsItem";
 
-const PilarsList = () => {
+const PilarsSection = () => {
   return (
-    <div className="bg-brand-gray/5 flex justify-center p-8 text-black text-md md:text-lg font-manrope">
-      <div className="flex flex-wrap justify-between items-top h-full gap-8 w-full max-w-5xl pb-10 pt-6">
+    <div className="flex justify-center p-8 text-black text-md md:text-lg font-manrope">
+      <div className="flex flex-wrap justify-center items-top h-full gap-8 w-full max-w-5xl pb-10 pt-6">
         <PilarsItem
           icon="fa-solid fa-helmet-safety"
           title="AEC"
@@ -38,4 +38,4 @@ const PilarsList = () => {
   );
 };
 
-export default PilarsList;
+export default PilarsSection;
