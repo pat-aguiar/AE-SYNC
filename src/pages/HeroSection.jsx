@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <>
-      <div className="bg-gradient-to-b from-black/80 flex justify-center px-8 py-16">
+      <div className="bg-gradient-to-b from-black/90 flex justify-center px-8 py-16">
         <div className="flex flex-col items-center max-w-2xl">
           <div className="text-brand-gray/60 text-center text-sm md:text-md font-manrope font-semibold">
             WHERE AEC PROFESSIONALS BUILD AUTOMATION
@@ -28,7 +28,7 @@ const HeroSection = () => {
             Increase your <span className="font-bold">worth</span>.
           </div>
           <Link
-            to="/premium"
+            to="/sign-in"
             className="bg-brand-blue border-2 border-b-8 border-black font-semibold hover:bg-brand-orange-light text-sm md:text-lg text-white px-12 md:px-20 mb-2 py-4 rounded-full"
           >
             I Want To Go Pro

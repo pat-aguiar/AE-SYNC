@@ -4,7 +4,6 @@ import ExampleCard from "./ExampleCard";
 
 const ExampleCarousel = () => {
   const [startIdx, setStartIdx] = useState(1);
-  console.log(startIdx);
 
   const exampleCards = examples
     .slice(startIdx, startIdx + 3)
