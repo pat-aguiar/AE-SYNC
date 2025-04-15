@@ -43,7 +43,9 @@ const Footer = () => {
             </div>
             <Link className="my-1" to="/sign-in">
               Inquiries
-              <div className="my-1 text-black/50 hover:text-white/50">xxx@ae-sync.com</div>
+              <div className="my-1 text-black/50 hover:text-white/50">
+                xxx@ae-sync.com
+              </div>
             </Link>
             <Link className="my-1" to="/sign-in">
               <i className="fa-solid fa-bug pl-1 w-7" />
