@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const {sticky} = props;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 right-0 left-0 z-10">
+    <div className={sticky+" top-0 right-0 left-0 z-10"}>
       <nav className="flex justify-center p-8 bg-black/90 text-brand-gray text-sm font-manrope">
         <div className="flex justify-between items-center w-full max-w-6xl sm:px-10">
           <Link to="/">

@@ -1,4 +1,4 @@
-const PilarsItem = (props) => {
+const PillarsItem = (props) => {
   const { icon, title, subtitle, description } = props;
   return (
     <div className="bg-white border border-black p-4 rounded-md text-center w-56">
@@ -12,4 +12,4 @@ const PilarsItem = (props) => {
   );
 };
 
-export default PilarsItem;
+export default PillarsItem;

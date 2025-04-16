@@ -1,5 +1,5 @@
 import { useState } from "react";
-import examples from "../../examples";
+import examples from "../../../../public/examples";
 import ExampleCard from "./ExampleCard";
 
 const ExampleCarousel = () => {
