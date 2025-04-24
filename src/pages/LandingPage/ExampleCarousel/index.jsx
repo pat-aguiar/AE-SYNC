@@ -6,18 +6,18 @@ const ExampleCarousel = () => {
   const [startIdx, setStartIdx] = useState(1);
 
   const exampleCards = examples
-    .slice(startIdx, startIdx + 3)
+    .slice(startIdx, startIdx + 4)
     .map((example, idx) => <ExampleCard example={example} key={idx} />);
 
   return (
-    <div className="flex flex-col justify-center p-8">
+    <div className="flex flex-col items-center p-8">
       <div className="font-oswald text-center text-black text-2xl md:text-4xl  md:leading-[1.5] mb-4 font-semibold">
         What will you Build?
       </div>
-      <div className="text-black text-center text-sm md:text-lg font-manrope mb-16">
+      <div className="text-black text-center text-sm md:text-lg font-manrope mb-10">
         Productivity increasing automation tools, on the web.
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center max-w-6xl">
         <button
           onClick={() => {
             if (startIdx > 0) {
@@ -25,7 +25,7 @@ const ExampleCarousel = () => {
             }
           }}
         >
-          <i className="fa-solid fa-chevron-circle-left mb-4 text-xl md:text-3xl text-brand-gray/50 rounded-full" />
+          <i className="fa-solid fa-chevron-circle-left text-xl md:text-3xl text-brand-orange-dark hover:text-brand-orange rounded-full" />
         </button>
         <div className="flex flex-wrap justify-center">{exampleCards}</div>
         <button
@@ -35,7 +35,7 @@ const ExampleCarousel = () => {
             }
           }}
         >
-          <i className="fa-solid fa-chevron-circle-right mb-4 text-xl md:text-3xl text-brand-gray/50 rounded-full" />{" "}
+          <i className="fa-solid fa-chevron-circle-right text-xl md:text-3xl text-brand-orange-dark hover:text-brand-orange rounded-full" />{" "}
         </button>
       </div>
     </div>

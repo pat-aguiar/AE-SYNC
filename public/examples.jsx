@@ -6,7 +6,7 @@ const examples = [
         description: "stairs design for local compliance",
     },
     {
-        title: "Management Tools",
+        title: "Management Tool",
         subtitle: "",
         image: "./public/temp-example-img.jpeg",
         description: "project budget vs worked hours/teams/hour allocation",
