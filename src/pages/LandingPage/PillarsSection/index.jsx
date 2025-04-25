@@ -1,9 +1,10 @@
 import PillarsItem from "./PillarsItem";
+import { Link } from "react-router-dom";
 
 const PillarsSection = () => {
   return (
-    <div className="flex justify-center p-8 text-black text-md md:text-lg font-manrope">
-      <div className="flex flex-wrap justify-center items-top h-full gap-8 w-full max-w-5xl">
+    <div className="flex flex-col items-center px-8 text-black text-md md:text-lg font-manrope">
+      <div className="flex flex-wrap justify-center lg:justify-between items-top h-full gap-2 sm:px-10 w-full max-w-5xl">
         <PillarsItem
           icon="fa-solid fa-helmet-safety"
           title="AEC"
@@ -34,6 +35,13 @@ const PillarsSection = () => {
           you to your first AEC web based automation tool."
         />
       </div>
+      <Link
+        to="/sign-in"
+        className="flex items-center justify-center m-4"
+      >
+        <div className="italic text-brand-gray text-xs md:text-sm">"Add $$$ to your next salary negotiation." {"  "}</div>
+        <i className="fa-solid fa-arrow-right px-2 text-2xl text-brand-orange" />
+      </Link>
     </div>
   );
 };

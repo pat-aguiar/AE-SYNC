@@ -15,8 +15,8 @@ const LandingPage = () => {
       <HeroSection />
       <FeatureSection />
       <ExampleCarousel />
-      <PillarsSection />
       <WhyProfessionalsSection />
+      <PillarsSection />
       <WhyCompaniesSection />
       <Footer />
     </div>

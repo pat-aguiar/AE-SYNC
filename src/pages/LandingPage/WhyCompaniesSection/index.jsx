@@ -7,7 +7,7 @@ const WhyCompaniesSection = () => {
   ));
 
   return (
-    <div className="flex flex-col items-center p-8">
+    <div className="flex flex-col items-center p-8 mt-10">
       <div className="flex flex-col items-center sm:px-10 text-brand-orange-dark rounded-2xl max-w-5xl">
         <div className="font-oswald font-semibold mb-7 text-center text-black text-lg md:text-2xl md:leading-[1.5]">
           WHY COMPANIES CHOOSE WEB DEV
