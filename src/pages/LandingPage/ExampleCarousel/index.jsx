@@ -45,11 +45,11 @@ const ExampleCarousel = () => {
           <i className="fa-solid fa-chevron-circle-right text-xl md:text-3xl text-brand-orange-dark hover:text-brand-orange rounded-full" />{" "}
         </button>
       </div>
-      <div className="italic mt-6 text-brand-gray text-xs md:text-sm">
+      <div className="flex flex-wrap italic items-center justify-center text-brand-gray text-xs md:text-sm">
         “Keep your mindset on growth.”
         <Link
           to="/sign-in"
-          className="bg-brand-orange-light border border-brand-orange font-semibold hover:bg-white ml-6 text-white hover:text-brand-blue px-6 py-2 relative rounded-full"
+          className="bg-brand-orange-light border border-brand-orange font-semibold hover:bg-white m-4 text-white hover:text-brand-blue px-6 py-2 relative rounded-full"
         >
           Get Started
           <span class="absolute -z-10 top-0 right-5 h-full w-2/3 animate-ping rounded-full bg-brand-blue opacity-75 " />
