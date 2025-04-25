@@ -4,7 +4,8 @@ import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
 import FeatureSection from "./FeatureSection";
 import PillarsSection from "./PillarsSection";
-import WhySection from "./WhySection";
+import WhyProfessionalsSection from "./WhyProfessionalsSection";
+import WhyCompaniesSection from "./WhyCompaniesSection";
 
 const LandingPage = () => {
   return (
@@ -15,7 +16,8 @@ const LandingPage = () => {
       <FeatureSection />
       <ExampleCarousel />
       <PillarsSection />
-      <WhySection />
+      <WhyProfessionalsSection />
+      <WhyCompaniesSection />
       <Footer />
     </div>
   );

@@ -6,25 +6,28 @@ import { Link } from "react-router-dom";
 const ExampleCarousel = () => {
   const [startIdx, setStartIdx] = useState(1);
 
-  const exampleCards = examples
-    .slice(startIdx, startIdx + 4)
+  const exampleCards_smallScreen = examples
+    .slice(startIdx, startIdx + 3)
+    .map((example, idx) => <ExampleCard example={example} key={idx} />);
+
+  const exampleCards_largeScreen = examples
+    .slice(startIdx, startIdx + 6)
     .map((example, idx) => <ExampleCard example={example} key={idx} />);
 
   return (
     <div className="flex flex-col items-center p-8">
-      <div className="font-oswald font-semibold mb-7 text-center text-black text-2xl md:text-4xl md:leading-[1.5] ">
-        What will you Build?
+      <div className="font-oswald font-semibold mb-7 text-center text-black text-lg md:text-2xl md:leading-[1.5] ">
+        WHAT CAN YOU BUILD?
       </div>
       <div className="text-black text-center text-sm md:text-base font-manrope max-w-2xl mb-12">
         Productivity increasing automation tools, on the web.
         <div className="mt-3 text-xs md:text-sm/6">
           The AE-SYNC Build library helps you create intuitive, robust and easy
-          to use tools.
-          Driven AEC professionals are building internal tools, design,
-          management and data visualization applications.
+          to use tools. Driven AEC professionals are building internal tools,
+          design, management and data visualization applications.
         </div>
       </div>
-      <div className="flex justify-center max-w-6xl">
+      <div className="flex justify-center w-full">
         <button
           onClick={() => {
             if (startIdx > 0) {
@@ -32,9 +35,16 @@ const ExampleCarousel = () => {
             }
           }}
         >
-          <i className="fa-solid fa-chevron-circle-left text-xl md:text-3xl text-brand-orange-dark hover:text-brand-orange rounded-full" />
+          <i className="fa-solid fa-chevron-circle-left text-xl md:text-3xl text-black hover:text-brand-orange rounded-full" />
         </button>
-        <div className="flex flex-wrap justify-center">{exampleCards}</div>
+
+        <div className="hidden lg:flex flex-wrap justify-center">
+          {exampleCards_largeScreen}
+        </div>
+        <div className="lg:hidden flex flex-wrap justify-center">
+          {exampleCards_smallScreen}
+        </div>
+
         <button
           onClick={() => {
             if (startIdx < examples.length - 3) {
@@ -42,7 +52,7 @@ const ExampleCarousel = () => {
             }
           }}
         >
-          <i className="fa-solid fa-chevron-circle-right text-xl md:text-3xl text-brand-orange-dark hover:text-brand-orange rounded-full" />{" "}
+          <i className="fa-solid fa-chevron-circle-right text-xl md:text-3xl text-black hover:text-brand-orange rounded-full" />{" "}
         </button>
       </div>
       <div className="flex flex-wrap italic items-center justify-center text-brand-gray text-xs md:text-sm">
